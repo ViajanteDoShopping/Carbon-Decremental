@@ -1,31 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon Decremental</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Carbon Decremental</h1>
+      <h1>Carbon Decremental</h1>
     </header>
 
     <main>
-        <section id="control_panel"> <!--tudo oque voce vai escrever vai estar aqui no painel de controle-->
-            <img src="images/map.jpg" alt="Mapa Mundial">
+      <section id="control_panel">
+        <!--tudo oque voce vai escrever vai estar aqui no painel de controle-->
+        <img src="assets/sprites/map.jpg" alt="Mapa Mundial" />
 
-            <div class="score-container"><!--tudo oque voce vai escrever vai estar aqui no container de pontos-->
-                <span class="label">Carbono:</span>
-            </div>
+        <span class="label">Carbono:</span>
+        <div class="score-container">
+          <!--tudo oque voce vai escrever vai estar aqui no container de pontos-->
+          <div id="carbon_bar">0%</div>
+        </div>
+      </section>
 
-        </section>
-
-        <section id="skill_tree"></section>
+      <section id="skill_tree"></section>
     </main>
 
     <footer>
-        <a href="https://github.com/ViajanteDoShopping/Carbon-Decremental">Github</a>
-        <a href="https://github.com/ViajanteDoShopping/Carbon-Decremental/blob/main/LICENSE">© 2026</a>
+      <a href="https://github.com/ViajanteDoShopping/Carbon-Decremental"
+        >Github</a
+      >
+      <a
+        href="https://github.com/ViajanteDoShopping/Carbon-Decremental/blob/main/LICENSE"
+        >© 2026</a
+      >
     </footer>
-</body>
+
+    <script src="src/js/script.js"></script>
+  </body>
 </html>
