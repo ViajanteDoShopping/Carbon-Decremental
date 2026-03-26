@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +15,21 @@
     <main>
       <section id="control_panel">
         <!--tudo oque voce vai escrever vai estar aqui no painel de controle-->
-        <img src="assets/sprites/map.jpg" alt="Mapa Mundial" />
+        <img id="world_map" src="assets/sprites/map.jpg" alt="Mapa Mundial" />
 
-        <span class="label">Carbono:</span>
-        <div class="score-container">
+        <div id="score_containers">
           <!--tudo oque voce vai escrever vai estar aqui no container de pontos-->
-          <div id="carbon_bar">0%</div>
+          <div class="score-container">
+            <div class="scorebar" id="carbon_bar">0%</div>
+          </div>
+          <!--tudo oque voce escrever vai estar nos dinheiros🤑-->
+          <div class="score-container">
+            <div class="scorebar" id="money_bar">0%</div>
+          </div>
+          <!--aqui vão ser os pontos de pesquisa, elas precisam de dinheiro.-->
+          <div class="score-container">
+            <div class="scorebar" id="research_bar">0%</div>
+          </div>
         </div>
       </section>
 

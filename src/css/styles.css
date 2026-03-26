@@ -1,3 +1,28 @@
+body {
+  background-color: #2e2e2e;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+#control_panel {
+  position: relative;
+}
+
+#world_map {
+  width: 100%;
+  height: calc(100vh - 72px);
+}
+
+#score_containers {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
 .score-container {
   width: 300px;
   background-color: #eee;
@@ -6,13 +31,34 @@
   margin-bottom: 10px;
 }
 
-#carbon_bar {
+.scorebar {
   height: 30px;
   width: 0%;
-  background-color: blue;
+  background-color: black;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: white;
   line-height: 30px;
   border-radius: 10px 0 0 10px;
   transition: width 0.5s;
+}
+
+#carbon_bar {
+  background-color: black;
+}
+
+#money_bar {
+  background-color: green;
+}
+
+#research_bar {
+  background-color: lightblue;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }

@@ -1,11 +1,17 @@
-let score = 100;
-const maxScore = 100;
-const carbonBar = document.getElementById("carbon_bar");
+let carbonScore = 100;
+let moneyScore = 44;
+let researchScore = 33;
 
-function updateCarbonBar() {
-  if (score > 100) score = 100;
-  carbonBar.style.width = score + "%";
-  carbonBar.textContent = score + "%";
+const carbonBar = document.getElementById("carbon_bar");
+const moneyBar = document.getElementById("money_bar");
+const researchBar = document.getElementById("research_bar");
+
+function updateBar(score, bar, limit) {
+  if (score > limit) score = limit;
+  bar.style.width = score + "%";
+  bar.textContent = score + "%";
 }
 
-updateCarbonBar();
+updateBar(carbonScore, carbonBar, 100);
+updateBar(moneyScore, moneyBar, 100);
+updateBar(researchScore, researchBar, 100);
