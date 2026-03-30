@@ -8,6 +8,10 @@ h1 {
   text-align: center;
 }
 
+main {
+  width: 100%;
+}
+
 #control_panel {
   position: relative;
 }
@@ -53,6 +57,34 @@ h1 {
 #research_bar {
   background-color: lightblue;
 }
+
+#toggle_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px;
+  background-color:white;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#skill_tree {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: cadetblue;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
 
 footer {
   text-align: center;
