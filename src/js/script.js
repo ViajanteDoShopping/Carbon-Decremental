@@ -15,3 +15,16 @@ function updateBar(score, bar, limit) {
 updateBar(carbonScore, carbonBar, 100);
 updateBar(moneyScore, moneyBar, 100);
 updateBar(researchScore, researchBar, 100);
+
+const toggleBtn = document.getElementById('toggle_btn');
+const skillTree = document.getElementById('skill_tree');
+
+toggleBtn.addEventListener('click', () => {
+  skillTree.classList.toggle('open');
+
+  if (skillTree.classList.contains('open')) {
+    toggleBtn.textContent = '>';
+  } else {
+    toggleBtn.textContent = '<';
+  }
+});
