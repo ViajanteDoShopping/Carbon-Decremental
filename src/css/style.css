@@ -1,0 +1,155 @@
+body {
+  background-color: #2e2e2e;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+#control_panel {
+  position: relative;
+  width: 70%;
+}
+
+#world_map {
+  width: 100%;
+  height: calc(100vh - 72px);
+  object-fit: contain;
+  background-color: #093051;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#score_containers {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.score-container {
+  width: 300px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.scorebar {
+  height: 30px;
+  width: 0%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+  border-radius: 10px 0 0 10px;
+}
+
+.rate-indicator {
+  color: #ff6b6b;
+  white-space: nowrap;
+}
+
+#carbon_bar {
+  background-color: black;
+}
+
+#money_bar {
+  background-color: green;
+}
+
+#research_bar {
+  background-color: lightblue;
+}
+
+#toggle_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50px;
+  background-color:white;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#skill_tree {
+  width: 30%;
+  height: calc(100vh - 72px);
+  background-color: #111;
+}
+
+#skill_tree h2 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.upgrades-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.upgrade-btn {
+  width: 120px;
+  height: 120px;
+  background-color: #333;
+  color: #888;
+  border: 2px solid #555;
+  border-radius: 8px;
+  cursor: not-allowed;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.upgrade-btn.can-afford {
+  background-color: #004d1a;
+  color: #fff;
+  border-color: #00ff55;
+  cursor: pointer;
+}
+
+.upgrade-btn.can-afford:hover {
+  background-color: #007326;
+  box-shadow: 0 0 10px #00ff55;
+}
+
+.upgrade-btn.bought {
+  background-color: #77bf5c;
+  color: #111;
+  border-color: #fff;
+  cursor: default;
+  font-weight: bold;
+}
+
+
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

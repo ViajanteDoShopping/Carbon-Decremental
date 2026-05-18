@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="src/css/reset.css" />
-  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Carbon Decremental</title>
@@ -20,13 +20,21 @@
       <img id="world_map" src="assets/sprites/map.jpg" alt="Mapa Mundial" />
       <div id="score_containers">
         <!--tudo oque voce vai escrever vai estar aqui no container de pontos-->
-        <div class="score-container">
-          <div class="scorebar" id="carbon_bar">0%</div>
+        <div class="score-row">
+          <div class="score-container">
+            <div class="scorebar" id="carbon_bar">0%</div>
+          </div>
+          <span id="carbon_rate_display" class="rate-indicator"></span>
         </div>
+
         <!--tudo oque voce escrever vai estar nos dinheiros🤑-->
-        <div class="score-container">
-          <div class="scorebar" id="money_bar">0%</div>
+        <div class="score-row">
+          <div class="score-container">
+            <div class="scorebar" id="money_bar">0%</div>
+          </div>
+          <span id="money_rate_display" class="rate-indicator"></span>
         </div>
+
         <!--aqui vão ser os pontos de pesquisa, elas precisam de dinheiro.-->
         <div class="score-container">
           <div class="scorebar" id="research_bar">0%</div>
@@ -35,7 +43,8 @@
     </section>
 
     <section id="skill_tree">
-      <button id="toggle_btn">&lt;</button>
+      <h2>Skill Tree</h2>
+      <div id="upgrades_container" class="upgrades-grid"></div>
     </section>
   </main>
 
